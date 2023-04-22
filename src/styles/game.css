@@ -1,0 +1,83 @@
+    .gamebody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .he {
+        background: url("bg1.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: .7;
+        height: 100px;
+        widows: 100px;
+        position: absolute;
+        top: 40%;
+        right: 100px;
+        border-radius: 50%;
+        padding: 10px;
+        color: rgb(214, 20, 20);
+        display: flex;
+        align-items: center
+    }
+    
+    .heading1 {
+        height: 100px;
+        width: 500px;
+        position: absolute;
+        top: 010px;
+        background-image: url("a3.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .heading1 h1 {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 35px;
+        color: rgb(50, 34, 19);
+    }
+    
+    .gamecontent {
+        height: 450px;
+        width: 700px;
+        background-image: url("a2.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+    }
+    
+    .gamecontent p {
+        height: 300px;
+        width: 450px;
+        display: flex;
+        font-size: 20px;
+        font-style: italic;
+    }
+    
+    .gamecontent input {
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #d83d2c;
+        font-size: 30px;
+    }
+    
+    .left-button {
+        position: absolute;
+        left: 80px;
+    }
+    
+    .right-button {
+        position: absolute;
+        right: 80px;
+    }
