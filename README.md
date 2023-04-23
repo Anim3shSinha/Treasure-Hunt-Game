@@ -60,9 +60,11 @@ Firebase modules has to be installed
     npm start
 ```
 
+## Tech Stack Used
 
-
-
+1. ReactJs
+2. Firebase
+3. JavaScript
 
 
 
