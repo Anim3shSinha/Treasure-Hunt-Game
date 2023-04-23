@@ -1,70 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Treasure Hunt Game
 
-## Available Scripts
+This react app allows to play a wild Treasure Hunt Game with the clues hidden across the internet.
 
-In the project directory, you can run:
+## Key features : 
 
-### `npm start`
+1. Admin dashborad
+2. Progress saved options for players
+3. Five levels of puzzles
+4. Two deadend
+5. Leaderborad
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Players: 
 
-### `npm run build`
+The players gets to play 5 levels of puzzles each with unique  and amzaing ways to find the answers. The players can save their progress upon quiting the game at each level. They can also get to an deadend upon giving wrong answers which can lead to loss of all their progress. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can proceed to the next levels by submitting the correct answer and clicking on next.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Don't forget a Treasure is waiting for you in the end.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Admin:
 
-### `npm run eject`
+There is a seperate dashborad for Admin for analysis on user stats. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Admin login Id : admin@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Admin password : admin
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Live Demo
 
-### Code Splitting
+```
+    https://treasure-hunt-a9524.web.app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+The modules can be installed using the following command
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+    npm install 
+```
 
-### Making a Progressive Web App
+Firebase modules has to be installed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+    npm install firebase
+```
 
-### Advanced Configuration
+## Run 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+    npm start
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+## Hints
+
+1st Answer : Poseidon
+
+2nd Answer : Trident
+
+3rd Answer : Atlanna
+
+4th Answer : statue, clock, bench
+
+5th Answer : match the pictures in time
+## Home page
+
+![image](https://user-images.githubusercontent.com/76643531/233834276-3cec2611-913c-47ba-b7ae-af148da0804e.png)
+
+
+## Login page
+
+![image](https://user-images.githubusercontent.com/76643531/233834362-4298ebab-4321-4a0a-87e8-15183d53696b.png)
+
+## Admin DashBoard
+
+![image](https://user-images.githubusercontent.com/76643531/233834429-a9829c05-e8ec-492c-9c49-a0dbbdba282d.png)
+
+
+## Home page
+
+![image](https://user-images.githubusercontent.com/76643531/233834600-b1671db2-422d-4e67-8511-06ac644f6161.png)
+
+## Game page
+
+![image](https://user-images.githubusercontent.com/76643531/233834793-e6a63cfd-3bc8-4dab-855c-872eefe26992.png)
+
+
+
+
+
+
+
