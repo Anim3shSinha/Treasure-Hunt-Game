@@ -93,6 +93,7 @@ function Game5() {
 
   useEffect(() => {
     createCardBoard();
+    // eslint-disable-next-line
   }, []);
 
   const handleNext = () => {

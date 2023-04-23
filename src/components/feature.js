@@ -16,22 +16,21 @@ const Feature = () => {
         <p>
           <ul>
             <li>
-              this is feature
+              <strong> Players stats analysis dashborad for the admin</strong>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Pariatur, eveniet?
+              The admin can view the stats such as memory power, accuracy and
+              creativity of all players.
             </li>
             <li>
-              this is feature
+              <strong>Save and Continue game Feature</strong>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Pariatur, eveniet?
+              Any Player can quit the game and store their progress
             </li>
             <li>
-              this is feature
+              <strong> 5 Unique puzzles and 2 deadpoints</strong>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Pariatur, eveniet?
+              The user get to experience 5 crazy games and also faces two dead
+              points if they answers wrong
             </li>
           </ul>
         </p>

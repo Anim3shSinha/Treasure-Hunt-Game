@@ -27,9 +27,10 @@ const Auth = () => {
         name: newUser,
         email: newEmail,
         password: newPass,
-        time: Number(0),
-        time2: Number(0),
-        time3: Number(0),
+        time: Number(999),
+        time1: Number(999),
+        time2: Number(999),
+        time3: Number(999),
         level: Number(1),
       }).then((res) => {
         nav(`/home/${res.id}`);
@@ -38,20 +39,24 @@ const Auth = () => {
   };
 
   const userLogin = async () => {
-    const q1 = query(
-      userCollectionRef,
-      where("email", "==", newEmail),
-      where("password", "==", newPass)
-    );
-    if (!q1) {
-      console.log("No such user!");
+    if (newEmail === "admin@gmail.com" && newPass === "admin") {
+      nav("/admin");
     } else {
-      const qs = await getDocs(q1);
-      let user_id;
-      qs.forEach((doc) => {
-        user_id = doc.id;
-      });
-      nav(`/home/${user_id}`);
+      const q1 = query(
+        userCollectionRef,
+        where("email", "==", newEmail),
+        where("password", "==", newPass)
+      );
+      if (!q1) {
+        console.log("No such user!");
+      } else {
+        const qs = await getDocs(q1);
+        let user_id;
+        qs.forEach((doc) => {
+          user_id = doc.id;
+        });
+        nav(`/home/${user_id}`);
+      }
     }
   };
 

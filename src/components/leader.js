@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/feature.css";
 import { db } from "../firebase";
-import { collection, getDocs, updateDoc, doc } from "firebase/firestore";
+import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
 const Leader = () => {
   const [users, setUsers] = useState([]);
   const userCollectionRef = collection(db, "users");
@@ -10,14 +10,15 @@ const Leader = () => {
 
   useEffect(() => {
     const getUsers = async () => {
-      const querySnapshot = await getDocs(collection(db, "users"));
-      querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-        setUsers();
+      const updatedItems = [...users];
+      const q = query(userCollectionRef, orderBy("time"), limit(10));
+      const qs = await getDocs(q);
+      qs.forEach((doc) => {
+        updatedItems.push(doc.data().name);
+        setUsers(updatedItems);
       });
     };
     getUsers();
-    // console.log(users);
   }, []);
 
   const navigateToLand = () => {
@@ -41,7 +42,9 @@ const Leader = () => {
               textAlign: "left",
             }}
           >
-            <li>this is </li>
+            {users.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </p>
       </div>

@@ -97,7 +97,7 @@ const Game3 = () => {
           <br />
           <a
             style={{ fontSize: "20px", textDecoration: "none" }}
-            href="https://youtu.be/Cg4ENbUYAKM"
+            href="https://youtu.be/jwK0dpTYlXo"
             target="_blank"
           >
             Click here for video reference
