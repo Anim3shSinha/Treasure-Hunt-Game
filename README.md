@@ -46,6 +46,7 @@ The modules can be installed using the following command
 
 ```bash
     npm install 
+    npm install react-router-dom
 ```
 
 Firebase modules has to be installed
